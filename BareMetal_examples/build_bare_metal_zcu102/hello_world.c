@@ -91,8 +91,9 @@ void outString(char* string){
     if(NULL == string)
         return;
 
-    while(0 != *(string++)){
+    while(0 != *string){
         outByte(*string);
+        string++;
     }
 }
 
